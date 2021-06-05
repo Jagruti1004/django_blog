@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block	title %}{% endblock %}</title>
+	<link href="{% static "css/blog.css" %}" rel="stylesheet">
+</head>
+<body style="background-color:white;">
+	<div id="content">
+		{% block content %}
+		{% endblock %}
+	</div>
+	<div id="sidebar">
+		<h2 style="color:#034f84;">Blog Room</h2>
+			<p style="color:#92a8d1;">Read and Share</p>
+	</div>
+</body>
+</html>
